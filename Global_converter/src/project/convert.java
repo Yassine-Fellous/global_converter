@@ -49,7 +49,7 @@ public class convert {
     }
 
     public static String convertirEnHexadecimal(String texte) {
-        StringBuilder constructeurHex = new StringBuilder();
+        StringBuilder construcHex = new StringBuilder();
 
         for (int i = 0; i < texte.length(); i++) {
             char c = texte.charAt(i);
@@ -64,10 +64,10 @@ public class convert {
                 valeurAscii /= 16;
             }
 
-            constructeurHex.append(constructeurHexCaractere);
+            construcHex.append(constructeurHexCaractere);
         }
 
-        return constructeurHex.toString();
+        return construcHex.toString();
     }
 
     public static char obtenirChiffreHex(int valeur) {
@@ -79,7 +79,7 @@ public class convert {
     }
 
     public static String convertirEnOctalASCII(String texte) {
-        StringBuilder constructeurOctal = new StringBuilder();
+        StringBuilder construcOctal = new StringBuilder();
 
         for (int i = 0; i < texte.length(); i++) {
             char c = texte.charAt(i);
@@ -94,10 +94,10 @@ public class convert {
                 valeurAscii /= 8;
             }
 
-            constructeurOctal.append(constructeurOctalCaractere);
+            construcOctal.append(constructeurOctalCaractere);
         }
 
-        return constructeurOctal.toString();
+        return construcOctal.toString();
     }
 
     public static char obtenirChiffreOctal(int valeur) {
@@ -105,7 +105,7 @@ public class convert {
     }
 
     public static String convertirEnBinaireASCII(String texte) {
-        StringBuilder constructeurBinaire = new StringBuilder();
+        StringBuilder construcBinaire = new StringBuilder();
 
         for (int i = 0; i < texte.length(); i++) {
             char c = texte.charAt(i);
@@ -123,10 +123,10 @@ public class convert {
                 constructeurBinaireCaractere.insert(0, '0');
             }
 
-            constructeurBinaire.append(constructeurBinaireCaractere);
+            construcBinaire.append(constructeurBinaireCaractere);
         }
 
-        return constructeurBinaire.toString();
+        return construcBinaire.toString();
     }
 
 
